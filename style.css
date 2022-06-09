@@ -10,10 +10,37 @@ body{
   width: 200px;
   height: 200px;
   position:absolute;
-  bottom: 20%;
+  bottom: 0%;
   left: 10%;
   background-image: url('realpika.png');
   background-size: cover;
+}
+
+.enemy {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  bottom: 0%;
+  left: 70%;
+  background-image: url('ciao.webp');
+  background-size: cover;
+}
+
+.sfera {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  background-image: url( hallo.png ) ;
+  background-size: cover;
+  animation: sfera 4s linear;
+}
+
+@keyframes sfera{
+  100%{
+  left: -20%;
+  }
 }
 
 .jump{
@@ -23,10 +50,39 @@ body{
 
 @keyframes  jump {
     50%{
-      bottom: 60%;
+      bottom: 80%; 
     }
     100%{
-      bottom: 20%;
+      bottom: 5%;
       transform: rotate(-360deg);
     }
 }
+
+body{
+ background-image: url(house.png);
+
+ background-size: auto 100vh;
+
+
+
+ animation: move 5s linear infinite;
+
+ 
+ 
+}
+
+@keyframes move{
+  0% {
+    background-position: 0px 0 ;
+  }
+100%{
+  background-position: -2000px 0;
+}
+
+
+ }
+
+
+ .bad{
+
+ }
