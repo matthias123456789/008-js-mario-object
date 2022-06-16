@@ -18,7 +18,9 @@
 
   <script>
     const character = document.querySelector('.character')
-
+    const sfera =document.querySelector('.sfera')
+    
+    
     document.onkeydown = (event) => {
       console.log(event.code)
       if (event.code == "ArrowUp"){
@@ -26,6 +28,13 @@
         setTimeout( () => {
           character.classList.remove('jump')
         }, 2000 )
+      }
+      console.log(event.code)
+      if (event.code == "ArrowDown"){
+        sfera.classList.add('go')
+        setTimeout( () => {
+          sfera.classList.remove('go')
+        }, 7000 )
       }
     }
   </script>

@@ -10,7 +10,7 @@ body{
   width: 200px;
   height: 200px;
   position:absolute;
-  bottom: 0%;
+  bottom: 10%;
   left: 10%;
   background-image: url('realpika.png');
   background-size: cover;
@@ -31,12 +31,15 @@ body{
   height: 200px;
   position: absolute;
   bottom: 10%;
-  left: 50%;
-  background-image: url( hallo.png ) ;
+  left: 70%;
+  background-image: url( bro.webp ) ;
   background-size: cover;
-  animation: sfera 4s linear;
 }
 
+.go{
+  animation: sfera 7s linear;
+
+}
 @keyframes sfera{
   100%{
   left: -20%;
@@ -49,12 +52,15 @@ body{
 
 
 @keyframes  jump {
-    50%{
+    25%{
       bottom: 80%; 
     }
-    100%{
+    50%{
       bottom: 5%;
       transform: rotate(-360deg);
+    }
+    100%{
+      left: 70%
     }
 }
 
@@ -65,7 +71,7 @@ body{
 
 
 
- animation: move 5s linear infinite;
+ animation: move 7s linear infinite;
 
  
  
